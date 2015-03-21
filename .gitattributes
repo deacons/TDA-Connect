@@ -1,0 +1,3 @@
+platforms/* linguist-vendored
+plugins/* linguist-vendored
+hooks/* linguist-vendored
