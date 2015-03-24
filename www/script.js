@@ -13,6 +13,7 @@ $(document).ready(function() {
 		$(myframe).find('#loginboxes').css({'padding-top': '0'});
 		// Login Button Style from Framework7
 		$(myframe).find('#conn').css({'font-size': '17px', 'height': '44px', 'line-height': '42px', 'border': '1px solid #007aff', 'color': '#007aff', 'text-decoration': 'none', 'text-align': 'center', 'display': 'block', 'border-radius': '5px', 'background': '0 0', 'padding': '0 10px', 'margin': '20px auto 0', 'position': 'relative'}).attr({'ontouchstart': '', 'ontouchend': 'exeRemoteApp();'});
-		$(myframe).find('h2').text('Created by George Garside');
+		// Add brief controls information
+		$(myframe).find('h2').html('Hold cursor to right-click<br/>Scroll with two fingers<br/>Created by George Garside');
 	});
 });
