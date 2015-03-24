@@ -17,5 +17,13 @@ $(document).ready(function() {
 		$(myframe).find('h2').html('Hold cursor to right-click<br/>Scroll with two fingers<br/><br/>Created by George Garside');
 		// Remove file transfer and info page buttons
 		$(myframe).find('#svToolbar img').remove();
+		// Show keyboard button continuously
+		function showKeyboardButton() {
+			setTimeout(function () {
+				$(myframe).find('#svToolbar').css('display', 'block');
+				showKeyboardButton();
+			}, 200);
+		}
+		showKeyboardButton();
 	});
 });
