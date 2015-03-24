@@ -15,5 +15,7 @@ $(document).ready(function() {
 		$(myframe).find('#conn').css({'font-size': '17px', 'height': '44px', 'line-height': '42px', 'border': '1px solid #007aff', 'color': '#007aff', 'text-decoration': 'none', 'text-align': 'center', 'display': 'block', 'border-radius': '5px', 'background': '0 0', 'padding': '0 10px', 'margin': '20px auto 0', 'position': 'relative'}).attr({'ontouchstart': '', 'ontouchend': 'exeRemoteApp();'});
 		// Add brief controls information
 		$(myframe).find('h2').html('Hold cursor to right-click<br/>Scroll with two fingers<br/>Created by George Garside');
+		// Remove file transfer and info page buttons
+		$(myframe).find('#svToolbar img').remove();
 	});
 });
