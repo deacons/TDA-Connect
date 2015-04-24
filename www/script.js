@@ -27,5 +27,6 @@ $(document).ready(function() {
 			}, 200);
 		}
 		showKeyboardButton();
+		$('iframe').fadeIn('slow');
 	});
 });
