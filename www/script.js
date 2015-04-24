@@ -22,12 +22,10 @@ $(document).ready(function() {
 		// Show keyboard button continuously
 		function showKeyboardButton() {
 			setTimeout(function () {
-				$(myframe).find('#svToolbar').css('display', 'block');
+				$(myframe).find('#svToolbar').css({'top': 'auto', 'bottom': '0', 'margin-left': '200px'});
 				showKeyboardButton();
 			}, 200);
 		}
 		showKeyboardButton();
-		// Position keyboard button
-		$(myframe).find('.toolbar').css({'top': 'auto', 'bottom': '0', 'margin-left': '200px'});
 	});
 });
