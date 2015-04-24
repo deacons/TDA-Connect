@@ -25,5 +25,7 @@ $(document).ready(function() {
 			}, 200);
 		}
 		showKeyboardButton();
+		// Position keyboard button
+		$(myframe).find('.toolbar').css({'top': 'auto', 'bottom': '0', 'margin-left': '200px'});
 	});
 });
