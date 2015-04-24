@@ -22,13 +22,15 @@ $(document).ready(function() {
 		// Show keyboard button continuously
 		function showKeyboardButton() {
 			setTimeout(function () {
-				$(myframe).find('#svToolbar').css({'top': 'auto', 'bottom': '0', 'margin-left': '200px'});
+				$(myframe).find('#svToolbar').css({'display': 'block', 'top': 'auto', 'bottom': '0', 'margin-left': '200px'});
 				showKeyboardButton();
 			}, 200);
 		}
 		showKeyboardButton();
+		// Fade in iframe now that it's loaded
 		setTimeout(function() {
 			$('iframe').fadeIn('slow');
+			$(myframe).find('#svToolbar').css({'display': 'none'}); // If I don't do this, the button doesn't show
 		}, 500);
 	});
 });
