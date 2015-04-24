@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	$('iframe').load(function() {
+		// Get contents of iframe for use in this code
 		myframe = $('iframe').contents();
+		// Design
 		$(myframe).find('body').css('background-color','transparent');
 		$(myframe).find('#login div:first-child img').attr('src', 'https://georgegarside.com/thomasdeaconacademy/tdalogo.jpg').css('width', '100%');
 		$(myframe).find('#downloadlink').parent().remove();
