@@ -4,8 +4,37 @@
         "uninstalled": []
     },
     "config_munge": {
-        "files": {}
+        "files": {
+            "framework": {
+                "parents": {
+                    "iAd.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"iAd\"><param name=\"ios-package\" value=\"iAdPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
     },
-    "installed_plugins": {},
-    "dependent_plugins": {}
+    "installed_plugins": {
+        "com.rjfun.cordova.iad": {
+            "PACKAGE_NAME": "com.georgegarside.tdaconnect"
+        }
+    },
+    "dependent_plugins": {
+        "com.rjfun.cordova.extension": {
+            "PACKAGE_NAME": "com.georgegarside.tdaconnect"
+        }
+    }
 }
