@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		171DACF61AEAD2420089C97D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171DACF51AEAD2420089C97D /* Images.xcassets */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
@@ -16,6 +15,10 @@
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
 		305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
+		322E5881BAA6461A971E79DA /* CDVPluginExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 58ABDD5E8EA84B678A3604A8 /* CDVPluginExt.m */; };
+		C7A453660D404592BF127830 /* libCordovaGenericAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC27066CE4A4781B78B173F /* libCordovaGenericAd.a */; };
+		3F2DCB07BE944265AB83F073 /* iAdPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A670D767EB784D57A2A0D4FB /* iAdPlugin.m */; };
+		C3A0B0B99A064F1BB97947F2 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75063882C45E4F30B0C4834B /* iAd.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,14 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "TDA Connect/config.xml"; sourceTree = "<group>"; };
+		58ABDD5E8EA84B678A3604A8 /* CDVPluginExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVPluginExt.m"; path = "com.rjfun.cordova.extension/CDVPluginExt.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		8FC27066CE4A4781B78B173F /* libCordovaGenericAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCordovaGenericAd.a"; path = "TDA Connect/Plugins/com.rjfun.cordova.extension/libCordovaGenericAd.a"; sourceTree = "<group>"; fileEncoding = 4; };
+		11D4B158E0F54804989AD641 /* PluginAdapterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PluginAdapterDelegate.h"; path = "com.rjfun.cordova.extension/PluginAdapterDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		92653B8B09D4402ABF14132E /* CDVPluginExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVPluginExt.h"; path = "com.rjfun.cordova.extension/CDVPluginExt.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		D053F63B68F344C09BE035D5 /* GenericAdPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GenericAdPlugin.h"; path = "com.rjfun.cordova.extension/GenericAdPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A670D767EB784D57A2A0D4FB /* iAdPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "iAdPlugin.m"; path = "com.rjfun.cordova.iad/iAdPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		603CE0630DA54B1D91EA7864 /* iAdPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "iAdPlugin.h"; path = "com.rjfun.cordova.iad/iAdPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		75063882C45E4F30B0C4834B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "iAd.framework"; path = "System/Library/Frameworks/iAd.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +77,8 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				C7A453660D404592BF127830 /* libCordovaGenericAd.a in Frameworks */,
+				C3A0B0B99A064F1BB97947F2 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +150,8 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				8FC27066CE4A4781B78B173F /* libCordovaGenericAd.a */,
+				75063882C45E4F30B0C4834B /* iAd.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,6 +167,12 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				58ABDD5E8EA84B678A3604A8 /* CDVPluginExt.m */,
+				11D4B158E0F54804989AD641 /* PluginAdapterDelegate.h */,
+				92653B8B09D4402ABF14132E /* CDVPluginExt.h */,
+				D053F63B68F344C09BE035D5 /* GenericAdPlugin.h */,
+				A670D767EB784D57A2A0D4FB /* iAdPlugin.m */,
+				603CE0630DA54B1D91EA7864 /* iAdPlugin.h */,
 			);
 			name = Plugins;
 			path = "TDA Connect/Plugins";
@@ -194,7 +215,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 510;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = 5TFUK958NL;
@@ -278,6 +299,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				322E5881BAA6461A971E79DA /* CDVPluginExt.m in Sources */,
+				3F2DCB07BE944265AB83F073 /* iAdPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +346,10 @@
 				);
 				PRODUCT_NAME = "TDA Connect";
 				TARGETED_DEVICE_FAMILY = 2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TDA Connect/Plugins/com.rjfun.cordova.extension\"",
+				);
 			};
 			name = Debug;
 		};
@@ -355,6 +382,10 @@
 				);
 				PRODUCT_NAME = "TDA Connect";
 				TARGETED_DEVICE_FAMILY = 2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/TDA Connect/Plugins/com.rjfun.cordova.extension\"",
+				);
 			};
 			name = Release;
 		};

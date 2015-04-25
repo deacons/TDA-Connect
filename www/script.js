@@ -35,6 +35,7 @@ $(document).ready(function() {
 		}, 500);
 		// Connect button
 		$(myframe).find('#conn').bind('touchstart', function() {
+			iAd.removeBanner();
 			$('iframe').hide();
 			var paceload = window.setInterval(function(){
 				Pace.restart();
@@ -48,6 +49,11 @@ $(document).ready(function() {
 				$('div.page > p').hide();
 				$('iframe').fadeIn('slow');
 			}, 10000);
+		});
+		if (iAd) iAd.createBanner({
+			overlap: true,
+			position: iAd.AD_POSITION.BOTTOM_CENTER,
+			autoShow: true
 		});
 	});
 });
