@@ -1,0 +1,18 @@
+{
+    "com.rjfun.cordova.iad": {
+        "source": {
+            "type": "registry",
+            "id": "com.rjfun.cordova.iad"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.rjfun.cordova.extension": {
+        "source": {
+            "type": "registry",
+            "id": "com.rjfun.cordova.extension"
+        },
+        "is_top_level": false,
+        "variables": {}
+    }
+}

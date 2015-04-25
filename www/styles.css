@@ -1,0 +1,30 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.page {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: block;
+}
+
+div.page > p {
+	text-align: center;
+	font: 20px Helvetica;
+	background-color: lightgrey;
+	padding: 20px;
+	margin-top: 70px;
+}
