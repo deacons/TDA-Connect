@@ -21,3 +21,10 @@ iframe {
 	display: block;
 }
 
+div.page > p {
+	text-align: center;
+	font: 20px Helvetica;
+	background-color: lightgrey;
+	padding: 20px;
+	margin-top: 70px;
+}
