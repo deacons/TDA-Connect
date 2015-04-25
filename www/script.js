@@ -23,7 +23,7 @@ $(document).ready(function() {
 		// Show keyboard button continuously
 		function showKeyboardButton() {
 			setTimeout(function () {
-				$(myframe).find('#svToolbar').css({'display': 'block', 'top': 'auto', 'bottom': '0', 'margin-left': '200px'});
+				$(myframe).find('#svToolbar').css({'display': 'block'});
 				showKeyboardButton();
 			}, 200);
 		}
