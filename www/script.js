@@ -35,7 +35,7 @@ $(document).ready(function() {
 		}, 500);
 		// Connect button
 		$(myframe).find('#conn').bind('touchstart', function() {
-			iAd.removeBanner();
+			if (iAd) iAd.removeBanner();
 			$('iframe').hide();
 			var paceload = window.setInterval(function(){
 				Pace.restart();
@@ -43,11 +43,13 @@ $(document).ready(function() {
 			$('div.page > p').text('Connecting').show();
 			setTimeout(function() {
 				$('div.page > p').text('Optimising network connection').show();
+				if (iAd) iAd.removeBanner();
 			}, 2000);
 			setTimeout(function() {
 				clearInterval(paceload);
 				$('div.page > p').hide();
 				$('iframe').fadeIn('slow');
+				if (iAd) iAd.removeBanner();
 			}, 10000);
 		});
 		if (iAd) iAd.createBanner({
