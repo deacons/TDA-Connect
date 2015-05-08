@@ -7,17 +7,17 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>3879933F-E878-4D52-ACB3-E6F5FE38A9A7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TDA Connect</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>65997F5E9A438C3C93EF8848996125AFECC9824C</key>
+		<key>4A0801DAF17C07E28A3210B26988AB0B7F45D258</key>
 		<string>github.com:deacons/TDA-Connect.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>platforms/ios/TDA Connect.xcodeproj/project.xcworkspace</string>
+	<string>platforms/ios/TDA Connect.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>65997F5E9A438C3C93EF8848996125AFECC9824C</key>
+		<key>4A0801DAF17C07E28A3210B26988AB0B7F45D258</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>65997F5E9A438C3C93EF8848996125AFECC9824C</string>
+	<string>4A0801DAF17C07E28A3210B26988AB0B7F45D258</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>65997F5E9A438C3C93EF8848996125AFECC9824C</string>
+			<string>4A0801DAF17C07E28A3210B26988AB0B7F45D258</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TDA-Connect</string>
 		</dict>
